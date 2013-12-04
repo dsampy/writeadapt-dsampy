@@ -18,3 +18,17 @@ asciidoctor:
     idseparator: '-'
     sectanchors: ''
     icons: font
+profiles:
+  development:
+    deploy: nil 
+  production:
+    base_url: http://dsampy.github.io/writeadapt-dsampy
+    ctx_path: /writeadapt-dsampy
+    asciidoctor:
+      :attributes:
+        base_url: http://dsampy.github.io/writeadapt-dsampy
+        ctx_path: /writeadapt-dsampy
+        imagesdir: http://dsampy.github.io/writeadapt-dsampy/images 
+    deploy:
+      host: github_pages
+      branch: gh-pages
